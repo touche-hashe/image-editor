@@ -1,0 +1,146 @@
+/* start global value */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* variables css */
+
+/* end variabes css */
+/* start components class */
+
+/* end components class */
+::selection {
+  color: #060;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: sans-serif;
+  background-color: #333;
+}
+
+/* start meadia querie */
+@media (max-width: 575px) {
+  .container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    grid-template-columns: 1fr !important;
+    gap: 50px;
+  }
+  .img img,
+  canvas {
+    max-width: 70vw !important;
+    max-height: 45vh;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .container {
+    width: 540px;
+    margin: 0 auto;
+    grid-template-columns: 1fr !important;
+    gap: 50px;
+  }
+  .img img,
+  canvas {
+    max-width: 70vw !important;
+    max-height: 45vh;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .container {
+    width: 750px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .container {
+    width: 970px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.container {
+  background-color: #222;
+  width: 80vw;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+}
+.img {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.img img,
+canvas {
+  max-width: 50vw;
+  max-height: 45vh;
+}
+
+.upload input {
+  display: none;
+}
+.upload label {
+  color: #fff;
+  padding: 8px 20px;
+  border: 3px #fff dashed;
+  cursor: pointer;
+}
+.filters {
+  direction: rtl;
+}
+.filters ul,
+li {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filters label {
+  color: #fff;
+}
+.filters li {
+  margin: 10px;
+}
+.filters li:last-child {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.filters li #download,
+li button {
+  color: #fff;
+  padding: 10px 20px;
+  background-color: #060;
+  border: none;
+  cursor: pointer;
+}
+.input-text {
+  display: flex;
+  gap: 5px;
+}
+#font {
+  width: 60px;
+}
+.label {
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+#download {
+  text-decoration: none;
+}

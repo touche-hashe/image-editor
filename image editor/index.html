@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css files/style.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fonts -->
+    <title>image editor</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="img">
+        <div class="image-box">
+          <img id="image" />
+          <canvas></canvas>
+          <div class="input-text">
+            <input type="color" id="txtColor" value="#000000" />
+            <input type="number" id="font" />
+
+            <input checked type="checkbox" id="check" />
+            <label class="label" for="check">textStrocke</label>
+          </div>
+        </div>
+        <div class="upload">
+          <label for="upload">upload</label>
+          <input id="upload" type="file" />
+        </div>
+      </div>
+      <div class="filters">
+        <ul>
+          <li>
+            <label for="saturate">saturate</label>
+            <input id="saturate" type="range" min="0" max="200" value="100" />
+          </li>
+          <li>
+            <label for="contrast">contrast</label>
+            <input id="contrast" type="range" min="0" max="200" value="100" />
+          </li>
+          <li>
+            <label for="brightness">brightness</label>
+            <input id="brightness" type="range" min="0" max="200" value="100" />
+          </li>
+          <li>
+            <label for="sepia">sepia</label>
+            <input id="sepia" type="range" min="0" max="200" value="0" />
+          </li>
+          <li>
+            <label for="grayscale">grayscale</label>
+            <input
+              id="grayscale"
+              type="range"
+              min="0"
+              max="10"
+              step="0.1"
+              value="0"
+            />
+          </li>
+          <li>
+            <label for="blur">blur</label>
+            <input
+              id="blur"
+              type="range"
+              min="0"
+              max="1"
+              step="0.1"
+              value="0"
+            />
+          </li>
+          <li>
+            <label for="Hue-Rotate">Hue Rotate</label>
+            <input id="Hue-Rotate" type="range" min="0" max="350" value="0" />
+          </li>
+          <li>
+            <a download="true" id="download">download</a>
+            <button id="reset">reset</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
