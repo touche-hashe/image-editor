@@ -23,8 +23,7 @@ This project allows users to edit images directly in the browser without needing
 - CSS3  
 - JavaScript (Vanilla)
 
-## Preview
-(Add a screenshot of your editor UI here if you like)
+
 
 ##  License
 This project is licensed under the MIT License.
